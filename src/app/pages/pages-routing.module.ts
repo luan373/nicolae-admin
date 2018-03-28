@@ -13,6 +13,10 @@ const routes: Routes = [{
       component: DashboardComponent,
     },
     {
+      path: 'aluno',
+      loadChildren: './aluno/aluno.module#AlunoModule',
+    },
+    {
       path: '',
       redirectTo: 'dashboard',
       pathMatch: 'full',

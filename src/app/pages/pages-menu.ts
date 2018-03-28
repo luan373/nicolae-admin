@@ -12,6 +12,24 @@ export const MENU_ITEMS: NbMenuItem[] = [
     group: true,
   },
   {
+    title: 'Aluno',
+    icon: 'ion-person-stalker',
+    children: [
+      {
+        title: 'Cadastrar Aluno',
+        link: '/pages/aluno/cadastro',
+      },
+      {
+        title: 'Pesquisar Aluno',
+        link: '/auth/login',
+      },
+      {
+        title: 'Excluir Aluno',
+        link: '/auth/login',
+      },
+    ]
+  },
+  {
     title: 'Auth',
     icon: 'nb-locked',
     children: [

@@ -1,0 +1,49 @@
+<div class="row">
+  <div class="col-lg-12">
+    <nb-card>
+      <nb-card-header>Cadastrar Aluno</nb-card-header>
+      <nb-card-body>
+        <form [formGroup]="userForm" (ngSubmit)="save()">
+          <div class="row full-name-inputs">
+            <div id="firstName" class="col-sm-6 input-group">
+              <input type="text" [(ngModel)]="user.firstName" formControlName="firstName" placeholder="Nome" class="form-control" />
+            </div>
+            <div class="col-sm-6 input-group">
+              <input id="lastName" [(ngModel)]="user.lastName" formControlName="lastName" type="text" placeholder="Sobrenome" class="form-control"
+              />
+            </div>
+          </div>
+          <div class="row full-name-inputs">
+            <div class="col-sm-2 input-group">
+              <input [textMask]="{mask: mask}" [(ngModel)]="user.dateBirth" type="text" id="dateBirth" formControlName="dateBirth" class="form-control"
+                placeholder="Data de Nascimento" />
+            </div>
+          </div>
+          <div class="input-group">
+            <input id="email" [(ngModel)]="user.email" formControlName="email" type="text" placeholder="E-mail" class="form-control"
+            />
+          </div>
+          <div class="input-group">
+            <input id="password" [(ngModel)]="user.password" formControlName="password" type="password" placeholder="Senha" class="form-control"
+            />
+          </div>
+          <div class="input-group">
+            <input id="address" [(ngModel)]="user.address" formControlName="address" type="text" placeholder="Endereço" class="form-control"
+            />
+          </div>
+          <div class="row full-name-inputs">
+            <div class="col-sm-6 input-group">
+              <input id="telephone1" [(ngModel)]="user.telephone1" formControlName="telephone1" type="text" placeholder="Celular" class="form-control"
+              />
+            </div>
+            <div class="col-sm-6 input-group">
+              <input id="telephone2" [(ngModel)]="user.telephone2" formControlName="telephone2" type="text" placeholder="Telefone" class="form-control"
+              />
+            </div>
+          </div>
+          <button type="submit" class="btn btn-success">Salvar</button>
+        </form>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>
