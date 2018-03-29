@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { User } from '../../models/user';
-import { FormGroup } from '@angular/forms';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'ngx-aluno-component',
