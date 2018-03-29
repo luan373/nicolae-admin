@@ -6,7 +6,7 @@ import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class UserService {
-  private url: string = "http://localhost:8080/nicolae-ws/rest/user";
+  private url: string = 'http://localhost:8080/nicolae-ws/rest/user";
 
   constructor(private _http: HttpClient) { }
 
@@ -21,9 +21,9 @@ export class UserService {
         console.log(res);
       },
       err => {
-        console.log('Náo foi');
-        console.log(err);
-      }
+        //console.log('Náo foi');
+        //console.log(err);
+      },
     );
   }
 
